@@ -8,9 +8,9 @@ const updateColors = () => {
  */
 if (document.readyState !== "complete") {
   //   // Loading hasn't finished yet
-  console.log("readyState:", document.readyState);
+  // console.log("readyState:", document.readyState);
   document.onreadystatechange = () => {
-    console.log("readyState:", document.readyState);
+    // console.log("readyState:", document.readyState);
     updateColors();
   };
   // console.log("readyState:", "not completed");
@@ -18,6 +18,6 @@ if (document.readyState !== "complete") {
   // document.addEventListener("load", clickBtn);
 } else {
   // ready state is already in completed state
-  console.log("readyState:", "finished loading");
+  // console.log("readyState:", "finished loading");
   updateColors();
 }
